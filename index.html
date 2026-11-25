@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bali Origins — Coffee & Botanical Tea</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--olive:#2E3B2B;--cream:#F5F1E6;--paper:#FAF7F0;--sage:#6E7F63;--brown:#5C4632;--brass:#B5945B;--ink:#1E211D}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}h1,h2,h3,.serif{font-family:'Playfair Display',serif}button,a{transition:all .25s ease}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.nav-link{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}.btn-primary{background:var(--olive);color:var(--paper);border:1px solid var(--olive)}.btn-primary:hover{background:var(--brown)}.btn-outline{border:1px solid var(--olive);color:var(--olive)}.btn-outline:hover{background:var(--olive);color:var(--paper)}.eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:.68rem;color:var(--sage);font-weight:700}.product-card{background:var(--paper);border:1px solid #e7e0d2;overflow:hidden;transition:transform .3s,box-shadow .3s}.product-card:hover{transform:translateY(-5px);box-shadow:0 18px 35px #382b1912}.visual{min-height:260px;height:260px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#d8c6a3,#a58c69)}.tin{width:122px;height:170px;border-radius:15px 15px 12px 12px;background:linear-gradient(90deg,#777b66,#b0b49e 25%,#858a76 65%,#686e5a);box-shadow:18px 20px 24px #34291838,inset 8px 0 10px #ffffff30,inset -9px 0 10px #00000018;position:relative;transform:rotate(-3deg)}.tin:before{content:'';position:absolute;top:-10px;left:-4px;width:130px;height:18px;border-radius:5px;background:linear-gradient(#c5c5b2,#6b715f);box-shadow:0 4px 7px #0002}.tin:after{content:'BALI\A ORIGINS';white-space:pre;position:absolute;top:38%;width:100%;text-align:center;color:#f7f2e6;font-family:'Playfair Display';font-size:19px;letter-spacing:2px;text-shadow:0 1px 3px #3b3b2d}.tin-label{position:absolute;top:58%;width:100%;text-align:center;color:#f5f1e6;font-size:8px;letter-spacing:2px}.visual.coffee{background:linear-gradient(130deg,#d6c3a2,#aa8965)}.visual.herbal{background:linear-gradient(130deg,#d8d8bc,#9ba58b)}.visual.luwak{background:linear-gradient(130deg,#c9ad83,#756045)}.visual.cacao{background:linear-gradient(130deg,#d0ad91,#8b6247)}.visual.ginger{background:linear-gradient(130deg,#e4c9a0,#a77e4d)}.visual.turmeric{background:linear-gradient(130deg,#d7c99e,#b6a45e)}.visual.pandan{background:linear-gradient(130deg,#d5d8bd,#87966c)}.visual.mangosteen{background:linear-gradient(130deg,#d8b9c2,#8f6b7b)}.badge{background:var(--brass);color:#fff}.leaf-mark{font-size:3rem;color:#fff9;position:absolute;left:10%;bottom:5%;transform:rotate(-20deg)}.section-pad{padding:90px 5vw}.drawer{transform:translateX(100%);transition:transform .35s}.drawer.open{transform:translateX(0)}.overlay{opacity:0;pointer-events:none;transition:opacity .3s}.overlay.show{opacity:1;pointer-events:auto}.modal{opacity:0;pointer-events:none;transition:opacity .2s}.modal.show{opacity:1;pointer-events:auto}.modal-panel{transform:translateY(15px);transition:transform .25s}.modal.show .modal-panel{transform:translateY(0)}.fade-up{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.fade-up.visible{opacity:1;transform:translateY(0)}.pill{border:1px solid #d9d1c0;color:var(--brown)}.pill.active{background:var(--olive);border-color:var(--olive);color:white}.divider{height:1px;background:#d7cdbb}.map-art{background:linear-gradient(135deg,#d5d5bb,#b7c1a5);position:relative;overflow:hidden}.map-art:before{content:'';position:absolute;inset:0;background:linear-gradient(35deg,transparent 45%,#f5f1e688 46%,#f5f1e688 49%,transparent 50%),linear-gradient(130deg,transparent 55%,#f5f1e688 56%,#f5f1e688 59%,transparent 60%)}.pin{position:absolute;left:51%;top:48%;width:26px;height:26px;border-radius:50% 50% 50% 0;background:var(--olive);transform:rotate(-45deg);box-shadow:0 5px 12px #0002}.pin:after{content:'';position:absolute;width:9px;height:9px;background:var(--paper);border-radius:50%;top:8px;left:8px}.map-label{position:absolute;top:22%;left:13%;background:var(--paper);padding:8px 12px;border-radius:8px;font-size:11px;box-shadow:0 4px 14px #0001}.testimonial{background:var(--olive);color:var(--cream)}.gallery-card img{transition:transform .6s ease}.gallery-card:hover img{transform:scale(1.04)}
+@media(max-width:760px){.section-pad{padding:62px 6vw}.visual{min-height:225px;height:225px}.desktop-links{display:none}}
+</style>
+</head>
+<body>
+<header class="sticky top-0 z-40 bg-[#F5F1E6]/95 backdrop-blur border-b border-[#d9d1c0]">
+<div class="max-w-[1440px] mx-auto px-5 lg:px-10 h-[76px] flex items-center justify-between gap-5">
+<a href="#top" class="leading-tight"><span class="serif text-[22px] tracking-[.14em] font-semibold">BALI ORIGINS</span><span class="block text-[9px] tracking-[.28em] text-[#6E7F63]">COFFEE · BOTANICAL TEA</span></a>
+<nav class="desktop-links flex items-center gap-7"><a class="nav-link" href="#story">Our Story</a><a class="nav-link" href="#shop">Shop 7 Origins</a><a class="nav-link" href="#lookbook">Lookbook</a><a class="nav-link" href="#tasting">Free Tasting</a><a class="nav-link" href="#verify">Verify Certificate</a><a class="nav-link" href="#visit">Visit & Delivery</a></nav>
+<div class="flex items-center gap-3"><select id="currency" class="bg-transparent text-xs border-0 cursor-pointer" aria-label="Currency"><option value="IDR">IDR</option><option value="USD">USD</option><option value="AUD">AUD</option></select><button onclick="openCart()" class="relative p-2" aria-label="Open cart"><svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M3 4h2l2.2 11h10.5L20 8H6.1M9 19a1 1 0 1 0 0 .01M17 19a1 1 0 1 0 0 .01"/></svg><span id="cartCount" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-[#2E3B2B] text-white text-[10px] flex items-center justify-center">0</span></button><button class="md:hidden" onclick="toggleMobile()" aria-label="Menu">☰</button></div>
+</div><div id="mobileMenu" class="hidden px-6 pb-4 bg-[#F5F1E6] md:hidden"><div class="grid gap-3 text-xs uppercase tracking-widest"><a href="#story" onclick="toggleMobile()">Our Story</a><a href="#shop" onclick="toggleMobile()">Shop 7 Origins</a><a href="#lookbook" onclick="toggleMobile()">Lookbook</a><a href="#tasting" onclick="toggleMobile()">Free Tasting</a><a href="#verify" onclick="toggleMobile()">Verify Certificate</a><a href="#visit" onclick="toggleMobile()">Visit & Delivery</a></div></div>
+</header>
+<main id="top">
+
+<!-- 1. HERO BANNER (MEMAKAI FOTO: hero-kios.jpg) -->
+<section class="relative min-h-[640px] lg:min-h-[700px] flex items-center overflow-hidden bg-[#ebe4d4]">
+  <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-16 w-full grid lg:grid-cols-2 gap-10 items-center">
+    <div class="max-w-[600px] fade-up z-10">
+      <p class="eyebrow mb-5">A taste of Bali, brought back honestly</p>
+      <h1 class="text-5xl md:text-6xl xl:text-[68px] leading-[1.05] mb-7">The island’s <em class="text-[#6E7F63]">true origins.</em></h1>
+      <p class="text-base md:text-lg leading-8 text-[#5C4632] max-w-[520px] mb-9">Authentic Balinese coffee & herbal tea — fairly traded, thoughtfully packed, and free from tourist traps. From our island growers to your suitcase.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="#shop" class="btn-primary px-6 py-4 text-xs tracking-[.12em] uppercase">Explore the 7 Origins</a>
+        <a href="#tasting" class="btn-outline px-6 py-4 text-xs tracking-[.12em] uppercase">Claim Free Ubud Tasting</a>
+      </div>
+    </div>
+    <div class="relative h-[380px] sm:h-[460px] lg:h-[520px] rounded-sm overflow-hidden shadow-2xl border border-[#d8cfc0] bg-[#c9b38e] fade-up">
+      <img src="hero-kios.jpg" alt="Bali Origins Ubud Boutique Kiosk" class="w-full h-full object-cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div style="display:none" class="w-full h-full flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-[#2E3B2B] to-[#5C4632] text-[#F5F1E6]">
+        <span class="serif text-3xl tracking-widest">BALI ORIGINS</span>
+        <p class="text-xs tracking-widest uppercase mt-2 text-[#B5945B]">Upload file: hero-kios.jpg</p>
+      </div>
+      <div class="absolute bottom-4 left-4 bg-[#FAF7F0]/95 backdrop-blur px-4 py-2 text-[11px] tracking-wider uppercase text-[#2E3B2B] shadow">
+        Jl. Monkey Forest · Ubud Flagship Kiosk
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#2E3B2B] text-[#F5F1E6] py-5"><div class="max-w-[1440px] mx-auto px-6 lg:px-12 grid md:grid-cols-3 gap-5 text-center text-[10px] tracking-[.16em] uppercase"><div>✦ 100% certified authentic</div><div>✦ Honest fair price · $7–$14</div><div>✦ 100% flight-safe tin-box</div></div></section>
+
+<!-- 2. OUR STORY (MEMAKAI FOTO PHOTOSHOOT: story-photo.jpg) -->
+<section id="story" class="section-pad">
+  <div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="fade-up">
+      <p class="eyebrow mb-4">Rooted in the island</p>
+      <h2 class="text-4xl md:text-5xl leading-tight mb-6">Good souvenirs shouldn’t come with a hidden story.</h2>
+      <p class="text-[#5C4632] leading-8 mb-5">Bali Origins is built around a simple belief: visitors deserve the real thing, at a fair price. We source coffee from Kintamani’s highlands and botanical teas from Balinese growers—without inflated tour commissions or confusing claims.</p>
+      <p class="text-[#5C4632] leading-8">Each 100g tin is sealed with an inner aluminum foil pouch and one-way degassing valve—designed for freshness, gifting, and easy packing in your luggage.</p>
+    </div>
+    <div class="relative h-[430px] bg-[#d5c5a5] overflow-hidden rounded-sm shadow-lg border border-[#dfd6c5] fade-up">
+      <img src="story-photo.jpg" alt="Bali Origins 100g Tin-Box Collection Photoshoot" class="w-full h-full object-cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div style="display:none" class="w-full h-full flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-[#b49a70] to-[#5e513a] text-white">
+        <span class="serif text-3xl">From Bali, with intention.</span>
+        <p class="text-xs tracking-widest uppercase mt-3">Upload file: story-photo.jpg</p>
+      </div>
+      <div class="absolute bottom-4 right-4 bg-[#2E3B2B]/90 text-[#F5F1E6] px-4 py-2 text-[10px] tracking-[.18em] uppercase">
+        100G · SEALED · FLIGHT-SAFE
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SHOP THE 7 ORIGINS (MEMAKAI FOTO SATUAN: sku-01.jpg s/d sku-07.jpg) -->
+<section id="shop" class="section-pad pt-0"><div class="max-w-[1440px] mx-auto"><div class="flex flex-col md:flex-row md:items-end justify-between gap-7 mb-10"><div><p class="eyebrow mb-3">Seven island expressions</p><h2 class="text-4xl md:text-5xl">Shop the origins</h2><p class="text-[#5C4632] mt-4 max-w-lg">Small-batch coffee and botanical teas. All seven come in our travel-ready 100g tin.</p></div><div class="flex flex-wrap gap-2" id="filters"><button class="pill active rounded-full px-4 py-2 text-xs" data-filter="all">All</button><button class="pill rounded-full px-4 py-2 text-xs" data-filter="luwak">Exclusive Luwak</button><button class="pill rounded-full px-4 py-2 text-xs" data-filter="coffee">Specialty Coffee</button><button class="pill rounded-full px-4 py-2 text-xs" data-filter="tea">Herbal Tea</button></div></div><div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="productGrid"></div>
+<div class="mt-14 p-8 md:p-12 bg-[#e8e1d1] grid md:grid-cols-2 gap-9 items-center"><div><p class="eyebrow mb-2">Make it a thoughtful gift</p><h3 class="text-3xl md:text-4xl mb-3">Build your own 3-tin gift set</h3><p class="text-[#5C4632] leading-7">Pick any three origins. We'll pack them together in a gift-ready box and take 10% off your set.</p></div><div><div class="flex items-center justify-between mb-3"><span class="text-xs uppercase tracking-widest">Your gift selection</span><span id="bundleCount" class="text-xs text-[#6E7F63]">0 / 3 selected</span></div><div id="bundleChoices" class="grid grid-cols-2 gap-2"></div><div class="flex justify-between items-center mt-4"><p id="bundlePrice" class="serif text-2xl">Choose 3 tins</p><button id="bundleAdd" class="btn-primary px-5 py-3 text-xs uppercase tracking-widest disabled:opacity-40" disabled>Add gift set</button></div></div></div></div></section>
+
+<!-- 4. BRAND LOOKBOOK & EDITORIAL GALLERY (MEMAKAI FOTO MARKETING: gallery-luwak.jpg, gallery-coffee.jpg, gallery-tea.jpg, hero-kios.jpg) -->
+<section id="lookbook" class="section-pad pt-4">
+  <div class="max-w-[1440px] mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+      <div>
+        <p class="eyebrow mb-3">Visual Journal & Campaign</p>
+        <h2 class="text-4xl md:text-5xl">The Bali Origins Lookbook</h2>
+      </div>
+      <p class="text-sm text-[#5C4632] max-w-md">Crafted in Ubud, harvested across Kintamani & Tabanan. Click any frame to inspect our packaging and kiosk experience.</p>
+    </div>
+    <div class="grid md:grid-cols-12 gap-5">
+      <!-- Frame 1: Wild Luwak Photoshoot -->
+      <div onclick="openLightbox('gallery-luwak.jpg','Wild Luwak Exclusive Harvest — 100g Airtight Tin-Box & Serialized Authenticity Certificate')" class="gallery-card md:col-span-7 relative h-[360px] md:h-[460px] bg-[#d5c5a5] overflow-hidden rounded-sm cursor-pointer group border border-[#dfd6c5]">
+        <img src="gallery-luwak.jpg" alt="Wild Luwak Coffee Campaign" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1E211D]/80 via-transparent to-transparent flex flex-col justify-end p-6 text-[#F5F1E6]">
+          <span class="text-[10px] tracking-[.2em] uppercase text-[#B5945B]">01 · Exclusive Reserve</span>
+          <h3 class="serif text-2xl mt-1">Wild Luwak Coffee & Authenticity Certificate</h3>
+          <p class="text-xs text-[#F5F1E6]/80 mt-1">Click to enlarge ↗</p>
+        </div>
+      </div>
+      <!-- Frame 2: Specialty Coffee Photoshoot -->
+      <div onclick="openLightbox('gallery-coffee.jpg','Kintamani Single-Origin Arabica & Bali Cacao Mocha Collection')" class="gallery-card md:col-span-5 relative h-[360px] md:h-[460px] bg-[#c9b38e] overflow-hidden rounded-sm cursor-pointer group border border-[#dfd6c5]">
+        <img src="gallery-coffee.jpg" alt="Kintamani & Mocha Campaign" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1E211D]/80 via-transparent to-transparent flex flex-col justify-end p-6 text-[#F5F1E6]">
+          <span class="text-[10px] tracking-[.2em] uppercase text-[#B5945B]">02 · Highland Roasts</span>
+          <h3 class="serif text-2xl mt-1">Kintamani Arabica & Tabanan Cacao Mocha</h3>
+          <p class="text-xs text-[#F5F1E6]/80 mt-1">Click to enlarge ↗</p>
+        </div>
+      </div>
+      <!-- Frame 3: Herbal Tea Photoshoot -->
+      <div onclick="openLightbox('gallery-tea.jpg','Balinese Botanical Infusions — Red Ginger, Turmeric, Pandan & Mangosteen')" class="gallery-card md:col-span-5 relative h-[340px] md:h-[400px] bg-[#b7c1a5] overflow-hidden rounded-sm cursor-pointer group border border-[#dfd6c5]">
+        <img src="gallery-tea.jpg" alt="Balinese Herbal Tea Collection" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1E211D]/80 via-transparent to-transparent flex flex-col justify-end p-6 text-[#F5F1E6]">
+          <span class="text-[10px] tracking-[.2em] uppercase text-[#B5945B]">03 · Botanical Wellness</span>
+          <h3 class="serif text-2xl mt-1">Four Island Herbal Infusions</h3>
+          <p class="text-xs text-[#F5F1E6]/80 mt-1">Click to enlarge ↗</p>
+        </div>
+      </div>
+      <!-- Frame 4: Ubud Kiosk Experience -->
+      <div onclick="openLightbox('hero-kios.jpg','Bali Origins Flagship Kiosk on Jl. Monkey Forest, Ubud')" class="gallery-card md:col-span-7 relative h-[340px] md:h-[400px] bg-[#8f7958] overflow-hidden rounded-sm cursor-pointer group border border-[#dfd6c5]">
+        <img src="hero-kios.jpg" alt="Bali Origins Kiosk Ubud" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1E211D]/80 via-transparent to-transparent flex flex-col justify-end p-6 text-[#F5F1E6]">
+          <span class="text-[10px] tracking-[.2em] uppercase text-[#B5945B]">04 · The Ubud Experience</span>
+          <h3 class="serif text-2xl mt-1">Complimentary Tasting Bar · Jl. Monkey Forest</h3>
+          <p class="text-xs text-[#F5F1E6]/80 mt-1">Click to enlarge ↗</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. QUIZ -->
+<section id="quiz" class="section-pad bg-[#ebe5d8]"><div class="max-w-[1050px] mx-auto grid md:grid-cols-[.85fr_1.15fr] gap-12"><div><p class="eyebrow mb-3">A little guided discovery</p><h2 class="text-4xl md:text-5xl">Find your Bali brew.</h2><p class="mt-5 leading-7 text-[#5C4632]">Three quick choices, one recommendation that feels like you.</p></div><div class="bg-[#FAF7F0] p-7 md:p-9"><div class="flex gap-2 mb-7"><span class="quiz-dot w-7 h-1 bg-[#2E3B2B]"></span><span class="quiz-dot w-7 h-1 bg-[#d7d0c2]"></span><span class="quiz-dot w-7 h-1 bg-[#d7d0c2]"></span></div><div id="quizContent"><p class="eyebrow mb-2">Step 1 of 3</p><h3 class="serif text-2xl mb-5">How do you feel about caffeine?</h3><div class="grid gap-3"><button class="quiz-option border p-4 text-left hover:bg-[#e9e3d6]" data-q="caffeine" data-v="yes">Bring on the energy ☕</button><button class="quiz-option border p-4 text-left hover:bg-[#e9e3d6]" data-q="caffeine" data-v="no">Keep it caffeine-free 🌿</button></div></div></div></div></section>
+
+<!-- 6. VERIFY CERTIFICATE -->
+<section id="verify" class="section-pad"><div class="max-w-[1050px] mx-auto grid md:grid-cols-2 gap-12 items-center"><div><p class="eyebrow mb-3">Traceable by design</p><h2 class="text-4xl md:text-5xl mb-5">Know what’s in your tin.</h2><p class="leading-7 text-[#5C4632]">Our Wild Luwak tin comes with a serialized authenticity certificate. Enter a sample code to preview the verification experience.</p><div class="mt-7 flex flex-wrap gap-2"><span class="border border-[#d9d1c0] px-3 py-2 text-xs">Wild origin</span><span class="border border-[#d9d1c0] px-3 py-2 text-xs">Harvest trace</span><span class="border border-[#d9d1c0] px-3 py-2 text-xs">Quality checked</span></div></div><div class="bg-[#FAF7F0] p-7 md:p-9 border border-[#e2dacb]"><label for="certCode" class="text-xs uppercase tracking-widest">Certificate serial number</label><div class="flex gap-2 mt-3"><input id="certCode" class="bg-white border border-[#d8d0c0] px-4 py-3 w-full text-sm" value="BO-WL-2026-088" placeholder="Enter certificate code"><button onclick="verifyCert()" class="btn-primary px-5">Verify</button></div><div id="certResult" class="mt-5 hidden"></div></div></div></section>
+
+<!-- 7. FREE TASTING PASS -->
+<section id="tasting" class="section-pad testimonial"><div class="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-10 items-center"><div><p class="text-[#B5945B] eyebrow mb-3">Your first sip is on us</p><h2 class="text-4xl md:text-5xl mb-5">A tasting pass for curious travellers.</h2><p class="text-[#F5F1E6]/80 leading-7">Drop by our Monkey Forest kiosk and enjoy a complimentary coffee & botanical tea cupping. No purchase needed—just a chance to taste Bali at its roots.</p><button onclick="showVoucher()" class="mt-7 bg-[#F5F1E6] text-[#2E3B2B] px-6 py-4 text-xs tracking-widest uppercase">Reveal my free tasting pass</button></div><div id="voucher" class="hidden border border-[#B5945B] p-7 bg-[#F5F1E6] text-[#2E3B2B] relative"><div class="absolute inset-3 border border-[#B5945B]/40 pointer-events-none"></div><div class="text-center py-6 relative"><p class="eyebrow">Bali Origins · Ubud</p><h3 class="serif text-3xl mt-3">Complimentary Tasting Pass</h3><p class="mt-4 text-sm">Coffee + botanical tea cupping for one guest</p><div class="my-5 text-[#B5945B]">✦ ✦ ✦</div><p class="text-xs tracking-widest uppercase">Show this card at the kiosk</p><p class="text-xs mt-2">Jl. Monkey Forest · 08:00–21:00 WITA</p></div></div></div></section>
+
+<!-- 8. PARTNER HOTELS -->
+<section class="section-pad"><div class="max-w-[1200px] mx-auto"><div class="flex justify-between items-end mb-9"><div><p class="eyebrow mb-3">Stay close to the good things</p><h2 class="text-4xl md:text-5xl">Ubud, our neighbourhood.</h2></div><p class="hidden md:block text-sm text-[#5C4632]">A few places to make your Bali stay special.</p></div><div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4"><div class="bg-[#e5dfd1] p-5"><p class="eyebrow">01</p><h3 class="serif text-xl mt-3">Bisma Eight</h3><p class="text-xs mt-2 text-[#5C4632]">Boutique retreat in central Ubud</p></div><div class="bg-[#e5dfd1] p-5"><p class="eyebrow">02</p><h3 class="serif text-xl mt-3">Alaya Resort</h3><p class="text-xs mt-2 text-[#5C4632]">A tranquil stay near the village</p></div><div class="bg-[#e5dfd1] p-5"><p class="eyebrow">03</p><h3 class="serif text-xl mt-3">The Ubud Village</h3><p class="text-xs mt-2 text-[#5C4632]">Classic hospitality in town</p></div><div class="bg-[#e5dfd1] p-5"><p class="eyebrow">04</p><h3 class="serif text-xl mt-3">Komaneka</h3><p class="text-xs mt-2 text-[#5C4632]">Artful, peaceful island-inspired stay</p></div><div class="bg-[#e5dfd1] p-5"><p class="eyebrow">05</p><h3 class="serif text-xl mt-3">Maya Ubud</h3><p class="text-xs mt-2 text-[#5C4632]">A sanctuary surrounded by greenery</p></div></div><p class="text-[10px] text-[#6E7F63] mt-4">Partner hotel showcase placeholder—confirm partnership before publishing.</p></div></section>
+
+<!-- 9. VISIT & DELIVERY (MENAMPILKAN FOTO KIOS: hero-kios.jpg + PETA UBUD) -->
+<section id="visit" class="section-pad pt-0">
+  <div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-6">
+    <div class="flex flex-col gap-4">
+      <div class="relative h-[250px] rounded-sm overflow-hidden border border-[#d8cfc0] bg-[#c9b38e]">
+        <img src="hero-kios.jpg" alt="Bali Origins Kiosk Jl. Monkey Forest Ubud" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        <div class="absolute bottom-3 left-3 bg-[#2E3B2B]/90 text-[#F5F1E6] px-3 py-1.5 text-[11px] tracking-wider uppercase">
+          Our 15m² Wooden Kiosk · Jl. Monkey Forest
+        </div>
+      </div>
+      <div class="map-art min-h-[160px] rounded-sm">
+        <div class="map-label">Bali Origins · Ubud Kiosk</div>
+        <div class="pin"></div>
+        <div class="absolute bottom-4 left-5 bg-[#FAF7F0] px-3 py-1.5 text-xs">Jl. Monkey Forest · Ubud</div>
+      </div>
+    </div>
+    <div class="bg-[#2E3B2B] text-[#F5F1E6] p-8 md:p-10 flex flex-col justify-between">
+      <div>
+        <p class="eyebrow text-[#B5945B] mb-3">Find us in the heart of Ubud</p>
+        <h2 class="serif text-4xl mb-6">Come by. Sip. Say hello.</h2>
+        <p class="leading-7 text-[#F5F1E6]/80">Bali Origins Physical Kiosk<br>Jl. Monkey Forest, Ubud, Gianyar, Bali</p>
+        <div class="divider bg-[#F5F1E6]/20 my-6"></div>
+        <div class="flex justify-between gap-4 text-sm"><span>Daily opening hours</span><strong>08:00 – 21:00 WITA</strong></div>
+        <p class="text-sm text-[#F5F1E6]/75 mt-3">About 5 minutes’ walk from Ubud Monkey Forest.</p>
+      </div>
+      <div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Bali+Origins+Jl+Monkey+Forest+Ubud" target="_blank" rel="noopener" class="inline-block mt-7 bg-[#F5F1E6] text-[#2E3B2B] px-5 py-3 text-xs uppercase tracking-widest">Open in Google Maps ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-[1200px] mx-auto mt-7 bg-[#e8e1d1] p-7 md:p-10"><p class="eyebrow mb-2">Order your way</p><h2 class="serif text-3xl mb-6">A little Bali, delivered to you.</h2><div class="grid md:grid-cols-3 gap-3" id="orderModes"><button data-mode="delivery" class="mode-btn text-left bg-[#FAF7F0] border-2 border-[#2E3B2B] p-5"><span class="text-xs uppercase tracking-widest">01 · Hotel / Villa</span><h3 class="serif text-xl mt-2">Ubud delivery</h3><p class="text-xs mt-2">Same-day courier, where available.</p></button><button data-mode="pickup" class="mode-btn text-left bg-[#FAF7F0] border p-5"><span class="text-xs uppercase tracking-widest">02 · Kiosk</span><h3 class="serif text-xl mt-2">Click & collect</h3><p class="text-xs mt-2">Free pickup at Monkey Forest.</p></button><button data-mode="international" class="mode-btn text-left bg-[#FAF7F0] border p-5"><span class="text-xs uppercase tracking-widest">03 · Worldwide</span><h3 class="serif text-xl mt-2">Repeat order</h3><p class="text-xs mt-2">Scan to reorder after your trip.</p></button></div><div id="orderFields" class="mt-5 grid md:grid-cols-2 gap-4"></div><div class="mt-6 flex flex-wrap gap-3"><button onclick="openCart()" class="btn-primary px-6 py-3 text-xs uppercase tracking-widest">Review cart & checkout</button><button onclick="internationalQR()" id="qrButton" class="hidden btn-outline px-6 py-3 text-xs uppercase tracking-widest">Show reorder QR</button></div><div id="qrBox" class="hidden mt-5 bg-[#FAF7F0] p-5 max-w-sm"><div class="font-bold text-sm">International repeat order</div><p class="text-xs text-[#5C4632] mt-2">Scan or tap to open our WhatsApp order channel. Shipping details confirmed per destination.</p><a id="qrLink" class="underline text-sm mt-2 inline-block" target="_blank">Continue to WhatsApp ↗</a></div></div>
+</section>
+</main>
+
+<footer class="bg-[#1E211D] text-[#F5F1E6] py-12 px-6"><div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between gap-8"><div><div class="serif tracking-[.16em] text-xl">BALI ORIGINS</div><p class="text-xs tracking-[.18em] text-[#B5945B] mt-2">COFFEE · BOTANICAL TEA</p><p class="text-sm text-[#F5F1E6]/65 mt-4">Made with care on the island of Bali.</p></div><div class="text-xs text-[#F5F1E6]/65 leading-6"><a href="#shop">Shop</a> · <a href="#lookbook">Lookbook</a> · <a href="#story">Our story</a> · <a href="#visit">Visit Ubud</a><br>Prices shown are illustrative and currency conversion is approximate.<br><span class="mt-2 inline-block">© <span id="year"></span> Bali Origins</span></div></div></footer>
+
+<!-- Gallery Lightbox Modal -->
+<div id="lightboxModal" class="modal fixed inset-0 z-[80] bg-[#1e211d]/85 flex items-center justify-center p-4" onclick="closeLightbox()">
+  <div class="modal-panel bg-[#FAF7F0] max-w-[920px] w-full overflow-hidden rounded-sm" onclick="event.stopPropagation()">
+    <div class="flex justify-between items-center px-5 py-3 border-b border-[#e2dacb]">
+      <span class="eyebrow">Bali Origins · Lookbook</span>
+      <button onclick="closeLightbox()" class="text-2xl leading-none px-2" aria-label="Close">×</button>
+    </div>
+    <div class="bg-[#1E211D] flex items-center justify-center max-h-[75vh] overflow-hidden">
+      <img id="lightboxImg" src="" alt="Gallery Preview" class="w-full h-auto max-h-[75vh] object-contain">
+    </div>
+    <div class="p-4 text-sm text-[#2E3B2B] font-medium" id="lightboxCaption"></div>
+  </div>
+</div>
+
+<!-- Quick view -->
+<div id="quickModal" class="modal fixed inset-0 z-50 bg-[#1e211d]/65 flex items-center justify-center p-4"><div class="modal-panel bg-[#FAF7F0] max-w-[850px] w-full max-h-[92vh] overflow-auto"><div class="flex justify-end p-3"><button onclick="closeQuick()" class="text-2xl px-3" aria-label="Close">×</button></div><div id="quickContent" class="px-6 pb-8"></div></div></div>
+<!-- Cart -->
+<div id="cartOverlay" class="overlay fixed inset-0 bg-[#1e211d]/60 z-50" onclick="closeCart()"></div><aside id="cartDrawer" class="drawer fixed top-0 right-0 z-[60] h-full w-full max-w-[460px] bg-[#FAF7F0] shadow-2xl overflow-y-auto"><div class="p-6 border-b border-[#ddd4c4] flex justify-between items-center"><div><p class="eyebrow">Your selection</p><h2 class="serif text-3xl">Shopping bag</h2></div><button onclick="closeCart()" class="text-2xl" aria-label="Close cart">×</button></div><div id="cartItems" class="p-6"></div><div class="p-6 border-t border-[#ddd4c4]" id="cartSummary"></div></aside>
+<div id="checkoutModal" class="modal fixed inset-0 z-[70] bg-[#1e211d]/70 flex items-center justify-center p-4"><div class="modal-panel bg-[#FAF7F0] max-w-[560px] w-full p-7"><div class="flex justify-between"><h2 class="serif text-3xl">Order summary</h2><button onclick="closeCheckout()" class="text-2xl">×</button></div><div id="checkoutSummary" class="mt-5"></div><p class="text-xs text-[#6E7F63] mt-4">Checkout is a demo flow. Confirm stock, delivery fee and destination on WhatsApp.</p><button onclick="confirmWhatsApp()" class="btn-primary w-full py-4 mt-5 text-xs uppercase tracking-widest">Confirm via WhatsApp ↗</button></div></div>
+
+<script>
+// SUDAH DISINKRONKAN KE NAMA FILE LOKAL DI FOLDER YANG SAMA DENGAN index.html:
+const PRODUCT_IMAGES={
+  "SKU-01":"sku-01.jpg",
+  "SKU-02":"sku-02.jpg",
+  "SKU-03":"sku-03.jpg",
+  "SKU-04":"sku-04.jpg",
+  "SKU-05":"sku-05.jpg",
+  "SKU-06":"sku-06.jpg",
+  "SKU-07":"sku-07.jpg"
+};
+const products=[
+{id:'SKU-01',name:'Wild Luwak Coffee',price:220000,cat:'luwak',visual:'luwak',badge:'Limited Harvest · Certified',short:'Ethically sourced wild civet coffee from Kintamani. Smooth, low acidity, with a serialized certificate.',details:'100% ethically sourced wild civet coffee from Kintamani. Smooth body, low acidity, and includes a serialized Authenticity Certificate.',ingredients:'100% coffee beans',benefits:'A naturally mellow cup with a smooth profile.',brew:'French press: 15g coffee to 240ml water at 92–96°C. Steep 4 minutes.'},
+{id:'SKU-02',name:'Kintamani Arabica Single Origin',price:135000,cat:'coffee',visual:'coffee',badge:'Highland · Medium Roast',short:'Mount Batur highlands, 1,200–1,500 masl. Citrus and floral notes.',details:'Single-origin Arabica grown around Mount Batur, at 1,200–1,500 masl. A medium roast with bright citrus and floral notes.',ingredients:'100% Kintamani Arabica',benefits:'A bright, aromatic everyday coffee.',brew:'Pour-over: 15g medium-ground coffee to 240ml water. Bloom 30 seconds, then pour slowly.'},
+{id:'SKU-03',name:'Chocolate Mocha Coffee',price:125000,cat:'coffee',visual:'cacao',badge:'Coffee · Cacao',short:'Kintamani Arabica blended with pure Balinese cacao from Tabanan.',details:'A comforting coffee blend of Kintamani Arabica and pure Tabanan Balinese cacao powder.',ingredients:'Kintamani Arabica coffee and Balinese cacao powder',benefits:'Coffee’s aroma meets the familiar warmth of cacao.',brew:'French press or drip: 15g grounds to 240ml hot water. Adjust strength to taste.'},
+{id:'SKU-04',name:'Ginger Herbal Tea',price:110000,cat:'tea',visual:'ginger',badge:'Botanical · Warming',short:'Dried Balinese red ginger slices for a warming, lively infusion.',details:'A warming herbal infusion made with dried Balinese red ginger slices.',ingredients:'Dried Balinese red ginger',benefits:'A naturally warming, caffeine-free herbal drink.',brew:'Use 3–5g in 250ml hot water. Steep 5–8 minutes. Add honey or lemon if desired.'},
+{id:'SKU-05',name:'Turmeric Herbal Tea',price:110000,cat:'tea',visual:'turmeric',badge:'Botanical · Earthy',short:'Balinese turmeric root and lemongrass with an earthy, bright aroma.',details:'Dried Balinese turmeric root with lemongrass. An earthy infusion with citrus-like herbal lift.',ingredients:'Dried turmeric root and lemongrass',benefits:'Naturally caffeine-free; traditional botanical ingredients.',brew:'Use 3–5g in 250ml hot water. Steep 5–7 minutes.'},
+{id:'SKU-06',name:'Pandan Herbal Tea',price:110000,cat:'tea',visual:'pandan',badge:'Botanical · Fragrant',short:'Fragrant dried pandan leaves for a soft, comforting cup.',details:'A fragrant herbal tea made from dried pandan leaves, with a gentle and naturally aromatic profile.',ingredients:'Dried pandan leaves',benefits:'A soothing, caffeine-free aromatic infusion.',brew:'Use 2–4g in 250ml hot water. Steep 5–7 minutes.'},
+{id:'SKU-07',name:'Mangosteen Herbal Tea',price:110000,cat:'tea',visual:'mangosteen',badge:'Botanical · Fruit',short:'Dried mangosteen rind infusion, rich in plant compounds and a deep fruity character.',details:'Dried mangosteen rind prepared as a botanical infusion. Contains naturally occurring plant compounds, including xanthones.',ingredients:'Dried mangosteen rind',benefits:'Naturally caffeine-free and contains plant antioxidants. Not a medical treatment.',brew:'Use 3–5g in 250ml hot water. Steep 5–8 minutes.'}
+];
+const rates={IDR:1,USD:1/16000,AUD:1/10500};const symbols={IDR:'Rp',USD:'$',AUD:'A$'};let currency='IDR',cart=[],bundle=[],mode='delivery',quiz={};
+function fmt(n){let v=n*rates[currency];if(currency==='IDR')return 'Rp '+Math.round(v).toLocaleString('id-ID');return symbols[currency]+v.toFixed(2)}
+function tinMarkup(p){
+  let image=PRODUCT_IMAGES[p.id];
+  let fallback=`<div class="tin"><div class="tin-label">${p.name.split(' ').slice(0,2).join(' ').toUpperCase()}</div></div><span class="leaf-mark">❧</span>`;
+  return image?`<img src="${image}" alt="${p.name}" class="w-full h-full object-cover" onerror="this.outerHTML='${fallback.replace(/'/g,"&#39;")}'">`:fallback;
+}
+function renderProducts(filter='all'){let list=products.filter(p=>filter==='all'||p.cat===filter);document.getElementById('productGrid').innerHTML=list.map(p=>`<article class="product-card"><div class="visual ${p.visual}">${tinMarkup(p)}<span class="badge absolute top-4 left-4 text-[9px] uppercase tracking-widest px-3 py-2">${p.badge}</span></div><div class="p-5"><p class="eyebrow">${p.cat==='tea'?'Botanical tea':p.cat==='luwak'?'Exclusive origin':'Specialty coffee'} · 100g</p><h3 class="serif text-xl mt-2">${p.name}</h3><p class="text-sm text-[#5C4632] mt-2 leading-6 min-h-[72px]">${p.short}</p><div class="flex items-center justify-between mt-5"><span class="font-semibold">${fmt(p.price)}</span><button class="text-xs uppercase tracking-widest border-b border-[#2E3B2B] pb-1" onclick="quickView('${p.id}')">Discover ↗</button></div><button class="btn-primary w-full mt-4 py-3 text-xs tracking-widest uppercase" onclick="addToCart('${p.id}')">Add to bag</button></div></article>`).join('')}
+function updatePrices(){renderProducts(activeFilter);renderBundleChoices();renderCart();updateBundlePrice()}
+let activeFilter='all';document.getElementById('filters').addEventListener('click',e=>{let b=e.target.closest('[data-filter]');if(!b)return;activeFilter=b.dataset.filter;document.querySelectorAll('#filters .pill').forEach(x=>x.classList.toggle('active',x===b));renderProducts(activeFilter)});document.getElementById('currency').addEventListener('change',e=>{currency=e.target.value;updatePrices()});
+function quickView(id){let p=products.find(x=>x.id===id);document.getElementById('quickContent').innerHTML=`<div class="grid md:grid-cols-2 gap-7"><div class="visual ${p.visual} min-h-[300px] rounded">${tinMarkup(p)}</div><div><p class="eyebrow">${p.badge} · 100g</p><h2 class="serif text-3xl mt-3">${p.name}</h2><p class="font-semibold mt-4 text-lg">${fmt(p.price)}</p><p class="leading-7 text-[#5C4632] mt-4">${p.details}</p><div class="mt-5 space-y-4 text-sm"><div><b>Ingredients</b><p class="text-[#5C4632] mt-1">${p.ingredients}</p></div><div><b>Notes</b><p class="text-[#5C4632] mt-1">${p.benefits}</p></div><div><b>Brewing guide</b><p class="text-[#5C4632] mt-1">${p.brew}</p></div></div><button class="btn-primary w-full mt-6 py-3 text-xs uppercase tracking-widest" onclick="addToCart('${p.id}');closeQuick()">Add to bag</button></div></div>`;document.getElementById('quickModal').classList.add('show')}
+function closeQuick(){document.getElementById('quickModal').classList.remove('show')}
+function openLightbox(src,caption){document.getElementById('lightboxImg').src=src;document.getElementById('lightboxCaption').textContent=caption;document.getElementById('lightboxModal').classList.add('show')}
+function closeLightbox(){document.getElementById('lightboxModal').classList.remove('show')}
+function addToCart(id,qty=1){let item=cart.find(x=>x.id===id);if(item)item.qty+=qty;else cart.push({id,qty});renderCart();}
+function removeFromCart(id){cart=cart.filter(x=>x.id!==id);renderCart()}
+function cartQty(){return cart.reduce((s,x)=>s+x.qty,0)}
+function cartSubtotal(){return cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0)}
+function cartDiscount(){let tins=cartQty();return tins>=3?Math.floor(cartSubtotal()*.10):0}
+function renderCart(){document.getElementById('cartCount').textContent=cartQty();let items=document.getElementById('cartItems'),summary=document.getElementById('cartSummary');if(!cart.length){items.innerHTML='<p class="text-sm text-[#5C4632]">Your bag is waiting for something from Bali.</p>';summary.innerHTML='<button onclick="closeCart();document.getElementById(\'shop\').scrollIntoView()" class="btn-primary w-full py-3 text-xs uppercase tracking-widest">Explore the origins</button>';return}items.innerHTML=cart.map(x=>{let p=products.find(y=>y.id===x.id);return `<div class="flex gap-4 py-4 border-b border-[#e1d8c9]"><div class="visual ${p.visual} w-[95px] min-h-[115px] h-[115px] shrink-0">${tinMarkup(p)}</div><div class="flex-1"><h3 class="serif text-lg">${p.name}</h3><p class="text-sm mt-1">${fmt(p.price)}</p><div class="flex items-center gap-3 mt-3"><button onclick="changeQty('${p.id}',-1)" class="border px-2">−</button><span class="text-sm">${x.qty}</span><button onclick="changeQty('${p.id}',1)" class="border px-2">+</button><button onclick="removeFromCart('${p.id}')" class="text-xs underline ml-auto">Remove</button></div></div></div>`}).join('');let discount=cartDiscount();summary.innerHTML=`<div class="space-y-3 text-sm"><div class="flex justify-between"><span>Subtotal (${cartQty()} tins)</span><span>${fmt(cartSubtotal())}</span></div><div class="flex justify-between ${discount?'text-[#6E7F63]':'text-[#999]'}"><span>Gift-set discount (10% · 3+ tins)</span><span>− ${fmt(discount)}</span></div><div class="divider my-4"></div><div class="flex justify-between text-lg font-semibold"><span>Total</span><span>${fmt(cartSubtotal()-discount)}</span></div></div><button onclick="openCheckout()" class="btn-primary w-full py-4 mt-6 text-xs uppercase tracking-widest">Continue to order</button><p class="text-[10px] text-[#6E7F63] text-center mt-3">Delivery/pickup details next · Demo checkout</p>`}
+function changeQty(id,d){let i=cart.find(x=>x.id===id);if(i){i.qty+=d;if(i.qty<=0)removeFromCart(id);else renderCart()}}
+function openCart(){document.getElementById('cartOverlay').classList.add('show');document.getElementById('cartDrawer').classList.add('open')}
+function closeCart(){document.getElementById('cartOverlay').classList.remove('show');document.getElementById('cartDrawer').classList.remove('open')}
+function openCheckout(){closeCart();let modeText=mode==='delivery'?'Hotel / villa delivery':mode==='pickup'?'Click & collect':'International repeat order';document.getElementById('checkoutSummary').innerHTML=`<p class="text-xs uppercase tracking-widest text-[#6E7F63]">${modeText}</p><div class="mt-4">${cart.map(x=>{let p=products.find(z=>z.id===x.id);return `<div class="flex justify-between text-sm py-2 border-b"><span>${x.qty} × ${p.name}</span><span>${fmt(p.price*x.qty)}</span></div>`}).join('')}</div><div class="flex justify-between mt-4 text-sm"><span>Discount</span><span>− ${fmt(cartDiscount())}</span></div><div class="flex justify-between mt-3 font-semibold text-lg"><span>Total</span><span>${fmt(cartSubtotal()-cartDiscount())}</span></div><div class="text-xs mt-4 text-[#5C4632]">Order details: <span id="orderDetailSummary">Please fill the order mode details below on the page before confirming.</span></div>`;document.getElementById('checkoutModal').classList.add('show')}
+function closeCheckout(){document.getElementById('checkoutModal').classList.remove('show')}
+function orderDetails(){let fields=document.querySelectorAll('#orderFields input,#orderFields select');return Array.from(fields).map(f=>`${f.dataset.label||f.placeholder||f.name}: ${f.value}`).filter(x=>!x.endsWith(': ')).join('\n')}
+function confirmWhatsApp(){let message=`Hello Bali Origins! I'd like to confirm this order:\n\n${cart.map(x=>{let p=products.find(z=>z.id===x.id);return `${x.qty} × ${p.name} — ${fmt(p.price*x.qty)}`}).join('\n')}\n\nSubtotal: ${fmt(cartSubtotal())}\nBundle discount: ${fmt(cartDiscount())}\nTOTAL: ${fmt(cartSubtotal()-cartDiscount())}\n\nOrder mode: ${mode}\n${orderDetails()}\n\nPlease confirm availability and delivery/pickup details.`;window.open('https://wa.me/?text='+encodeURIComponent(message),'_blank');}
+function renderBundleChoices(){let el=document.getElementById('bundleChoices');if(!el)return;el.innerHTML=products.map(p=>`<button onclick="toggleBundle('${p.id}')" class="bundle-choice text-left border px-3 py-3 text-xs ${bundle.includes(p.id)?'bg-[#2E3B2B] text-white border-[#2E3B2B]':''}"><span class="block">${p.name}</span><span class="block mt-1 opacity-70">${fmt(p.price)}</span></button>`).join('')}
+function toggleBundle(id){if(bundle.includes(id))bundle=bundle.filter(x=>x!==id);else if(bundle.length<3)bundle.push(id);renderBundleChoices();updateBundlePrice()}
+function updateBundlePrice(){let n=bundle.length;document.getElementById('bundleCount').textContent=`${n} / 3 selected`;let total=bundle.reduce((s,id)=>s+products.find(p=>p.id===id).price,0);document.getElementById('bundlePrice').textContent=n===3?`${fmt(total)} → ${fmt(Math.round(total*.9))} (10% off)`:n?`${fmt(total)} · choose ${3-n} more`:'Choose 3 tins';document.getElementById('bundleAdd').disabled=n!==3}
+document.getElementById('bundleAdd').addEventListener('click',()=>{if(bundle.length!==3)return;bundle.forEach(id=>addToCart(id));bundle=[];renderBundleChoices();updateBundlePrice();openCart()});
+const quizSteps=[{key:'caffeine',title:'How do you feel about caffeine?',choices:[['Bring on the energy ☕','yes'],['Keep it caffeine-free 🌿','no']]},{key:'flavor',title:'Which flavor profile calls to you?',choices:[['Bright, floral & fruity','bright'],['Chocolatey & comforting','rich'],['Warm, earthy & herbal','earthy']]},{key:'purpose',title:'Is this for you or someone else?',choices:[['A little treat for myself','personal'],['A gift to take home','gift']]}];
+function renderQuiz(){let s=quizSteps[Object.keys(quiz).length],step=Object.keys(quiz).length;if(!s){let rec;if(quiz.caffeine==='no')rec=products.find(p=>p.id==='SKU-04');else if(quiz.flavor==='bright')rec=products.find(p=>p.id==='SKU-02');else if(quiz.flavor==='rich')rec=products.find(p=>p.id==='SKU-03');else rec=products.find(p=>p.id==='SKU-05');if(quiz.purpose==='gift'&&quiz.caffeine==='yes'&&quiz.flavor==='bright')rec=products.find(p=>p.id==='SKU-02');document.getElementById('quizContent').innerHTML=`<p class="eyebrow">Your Bali brew match</p><h3 class="serif text-2xl mb-3">${rec.name}</h3><p class="text-sm leading-6 text-[#5C4632]">${rec.short}</p><div class="font-semibold mt-4">${fmt(rec.price)}</div><div class="flex gap-3 mt-5"><button class="btn-primary px-5 py-3 text-xs uppercase" onclick="addToCart('${rec.id}');openCart()">Add to bag</button><button class="btn-outline px-5 py-3 text-xs uppercase" onclick="quiz={};renderQuiz()">Start again</button></div>`;document.querySelectorAll('.quiz-dot').forEach(d=>d.classList.add('bg-[#2E3B2B]'));return}document.querySelectorAll('.quiz-dot').forEach((d,i)=>d.className='quiz-dot w-7 h-1 '+(i<=step?'bg-[#2E3B2B]':'bg-[#d7d0c2]'));document.getElementById('quizContent').innerHTML=`<p class="eyebrow mb-2">Step ${step+1} of 3</p><h3 class="serif text-2xl mb-5">${s.title}</h3><div class="grid gap-3">${s.choices.map(c=>`<button class="quiz-option border p-4 text-left hover:bg-[#e9e3d6]" onclick="quizAnswer('${s.key}','${c[1]}')">${c[0]}</button>`).join('')}</div>`}
+function quizAnswer(k,v){quiz[k]=v;renderQuiz()}
+function verifyCert(){let val=document.getElementById('certCode').value.trim().toUpperCase(),box=document.getElementById('certResult');box.classList.remove('hidden');if(val==='BO-WL-2026-088'){box.innerHTML=`<div class="border border-[#B5945B] bg-[#e9e4d5] p-5"><div class="flex gap-3 items-center"><div class="w-10 h-10 rounded-full border border-[#B5945B] flex items-center justify-center text-[#B5945B]">✓</div><div><p class="text-xs uppercase tracking-widest text-[#6E7F63]">Certificate verified</p><h3 class="serif text-xl">Authentic Wild Luwak</h3></div></div><div class="grid grid-cols-2 gap-4 mt-5 text-sm"><div><span class="text-xs text-[#6E7F63]">Serial</span><p class="font-semibold">${val}</p></div><div><span class="text-xs text-[#6E7F63]">Harvest date</span><p class="font-semibold">18 August 2026</p></div><div><span class="text-xs text-[#6E7F63]">Origin</span><p class="font-semibold">Kintamani Farmer Cooperative</p></div><div><span class="text-xs text-[#6E7F63]">Quality inspection</span><p class="font-semibold">Passed · Batch checked</p></div></div><p class="text-[10px] text-[#6E7F63] mt-4">Demo verification record. Replace with live certificate database before launch.</p></div>`}else box.innerHTML=`<div class="bg-[#e9e4d5] p-4 text-sm"><b>Code not found.</b><p class="mt-1 text-[#5C4632]">Check the serial printed on your certificate and try again. Demo code: BO-WL-2026-088</p></div>`}
+function showVoucher(){document.getElementById('voucher').classList.remove('hidden')}
+function setMode(m){mode=m;document.querySelectorAll('.mode-btn').forEach(b=>b.classList.toggle('border-2',b.dataset.mode===m));document.querySelectorAll('.mode-btn').forEach(b=>b.classList.toggle('border-[#2E3B2B]',b.dataset.mode===m));let f=document.getElementById('orderFields'),qr=document.getElementById('qrButton');qr.classList.toggle('hidden',m!=='international');document.getElementById('qrBox').classList.add('hidden');if(m==='delivery')f.innerHTML=`<div><label class="text-xs uppercase tracking-widest">Hotel / villa name</label><input data-label="Hotel / Villa" placeholder="Hotel or villa name" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"></div><div><label class="text-xs uppercase tracking-widest">Room / reception note</label><input data-label="Room / Reception" placeholder="Room number or reception note" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"></div><div><label class="text-xs uppercase tracking-widest">Ubud area</label><input data-label="Ubud Area" placeholder="Area / location" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"></div><div><label class="text-xs uppercase tracking-widest">Delivery time</label><select data-label="Delivery time" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"><option>ASAP · subject to courier availability</option><option>Within 2 hours</option><option>Later today</option></select></div>`;else if(m==='pickup')f.innerHTML=`<div><label class="text-xs uppercase tracking-widest">Pickup date</label><input data-label="Pickup date" type="date" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"></div><div><label class="text-xs uppercase tracking-widest">Pickup time</label><select data-label="Pickup time" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"><option>08:00–10:00</option><option>10:00–12:00</option><option>12:00–14:00</option><option>14:00–16:00</option><option>16:00–18:00</option><option>18:00–20:00</option><option>20:00–21:00</option></select></div><div><label class="text-xs uppercase tracking-widest">Name for pickup</label><input data-label="Pickup name" placeholder="Your name" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"></div>`;else f.innerHTML=`<div><label class="text-xs uppercase tracking-widest">Destination country</label><input data-label="Country" placeholder="Country" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"></div><div><label class="text-xs uppercase tracking-widest">Email / WhatsApp for shipping quote</label><input data-label="Contact" placeholder="Your contact details" class="mt-2 border bg-[#FAF7F0] px-4 py-3 w-full"></div>`}
+document.getElementById('orderModes').addEventListener('click',e=>{let b=e.target.closest('[data-mode]');if(b)setMode(b.dataset.mode)});function internationalQR(){let q=document.getElementById('qrBox');q.classList.remove('hidden');let link='https://wa.me/?text='+encodeURIComponent('Hello Bali Origins, I would like to place an international repeat order.');document.getElementById('qrLink').href=link}
+function toggleMobile(){document.getElementById('mobileMenu').classList.toggle('hidden')}
+let observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.fade-up').forEach(x=>observer.observe(x));
+renderProducts();renderBundleChoices();renderQuiz();renderCart();setMode('delivery');document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
